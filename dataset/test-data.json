@@ -7,5 +7,11 @@
     "address": "1 rue de la Paix",
     "city": "Paris",
     "zipCode": "75001"
+  },
+  "registerUser": {
+    "firstName": "Test",
+    "lastName": "Test",
+    "email": "test@test.com",
+    "password": "123456"
   }
 }

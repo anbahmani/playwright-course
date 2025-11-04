@@ -1,0 +1,11 @@
+{
+  "user": {
+    "firstName": "Anis",
+    "lastName": "Bahmani",
+    "email": "test@test.com",
+    "phone": "0611111111",
+    "address": "1 rue de la Paix",
+    "city": "Paris",
+    "zipCode": "75001"
+  }
+}

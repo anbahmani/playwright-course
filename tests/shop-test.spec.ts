@@ -2,13 +2,11 @@ import { test } from "../fixture/shop-test.fixture";
 
 test("test to command 2 products", async ({ page, user }) => {
   await page.goto("/");
+  await page.locator("#products-grid > div > .p-6 > .w-full").first().click();
   await page
-    .locator("#featured-products-grid")
-    .getByTestId("product-add-to-cart-btn-1")
-    .click();
-  await page
-    .locator("#featured-products-grid")
-    .getByTestId("product-add-to-cart-btn-2")
+    .locator("#products-grid div")
+    .filter({ hasText: "-8%ApplesmartphonesiPhone 15" })
+    .getByTestId("add-to-cart-btn")
     .click();
   await page.locator("#header-cart-btn").click();
   await page.getByTestId("cart-checkout-btn").click();
